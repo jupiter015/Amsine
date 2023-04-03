@@ -1,0 +1,97 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Fraunces', serif;
+}
+html, body {
+    height: 100%;
+}
+#top_bar {
+    height: 20%;
+    background-color: #9A9CEA;
+    display: flex;
+}
+#top_bar img {
+    width: 200px;
+}
+#top_bar #top_bar_text {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-right: 200px;
+}
+#top_bar #top_bar_text img {
+    width: 125px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+    flex-direction: column;
+}
+form h1 {
+    font-size: 50px;
+    font-weight: 400;
+}
+form h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+form label {
+    padding: 10px;
+    font-size: 20px;
+    margin: 15px;
+}
+form input {
+    padding: 10px;
+    border: none;
+    width: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: #d3e0ff;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+form button {
+    color: white;
+    border: none;
+    padding: 10px 70px;
+    font-size: 20px;
+    background-color: #A2B9EE;
+    margin: 0px 10px 30px 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 30px;
+}
+form button:hover {
+    background-color: #91adee;
+    transition: 0.3s;
+}
+
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    border-top-color: #333;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

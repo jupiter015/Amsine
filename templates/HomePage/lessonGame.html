@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amsine</title>
+    <script src="{% static 'jquery.js' %}"></script>
+    <script src="{% static 'jquery_c.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'HomePage/css/lessonGame.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="navigation_bar">
+        <div id="left_side_tabs">
+            <img src="{% static 'amsine_logo_white.png' %}" alt="">
+            <div id="learning_tab">
+                <button class="tab_button" id="learning_tab_button" onclick="window.location.href = '/'">
+                    <img src="{% static 'white_learn_logo.png' %}" alt="">
+                    Learn
+                </button>
+            </div>
+            <div id="community_tab">
+                <button class="tab_button" id="community_tab_button" onclick="window.location.href = 'community/'">
+                    <img src="{% static 'white_community_logo.png' %}" alt="">
+                    Community
+                </button>
+            </div>
+            <div id="chat_link_tab">
+                <button class="tab_button" id="chat_link_tab_button">
+                    <img src="{% static 'white_chat_logo.png' %}" alt="">
+                    Chat
+                </button>
+            </div>
+        </div>
+        <div id="right_side_tabs">
+            <div id="language_tab">
+                <button class="tab_button" id="change_language_user_submenu">
+                    <img src="{% static 'Languages/'|add:last_language_used.name|add:'/language_logo.png' %}" alt="Language Logo">
+                    {{last_language_used.name}}
+                </button>
+            </div>
+            <div id="user_tab">
+                <div id="submenu" hidden>
+                    <button class="submenu_button" id="profile_user_submenu">Profile</button>
+                    <button class="submenu_button" id="log_out_user_submenu">Log Out</button>
+                </div>
+                <div id="user_tab_message_popup"></div>
+                <button class="tab_button" id="user_tab_button">
+                    <img src="{% static 'white_user_logo.png' %}" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="game_container" data-language_name="{{language_name}}" data-chapter_type="{{chapter_type}}">
+        <div id="game_header">
+            <h2>Lesson {{lessonNum}}</h2>
+            <h3>0/6</h3>
+        </div>
+        <div id="game_html_loader">
+            <div id="get_started_container">
+                <button id="get_started_button" class="next_button">Get Started</button>
+            </div>
+        </div>
+        <div id="spinner_container">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <script>
+        //Global variables
+        var csrfmiddlewaretoken = "{{ csrf_token }}";
+        let logOutUrl = "{% url 'HomePage:logOut' %}";
+        let checkIfUserProfileCustomizedUrl = "{% url 'HomePage:checkIfUserProfileCustomized' %}"
+        let loadNextQuestionUrl = "{% url 'HomePage:loadNextQuestion' %}"
+
+        var chapterNum = "{{chapterNum}}"
+        var lessonNum = "{{lessonNum}}"
+        var chapter_type = "{{chapter_type}}"
+        var language_name = "{{language_name}}"
+    </script>
+    <script src="{% static 'HomePage/js/lessonGame.js' %}"></script>
+</body>
+</html>

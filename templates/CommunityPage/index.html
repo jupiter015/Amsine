@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amsine</title>
+    <script src="{% static 'jquery.js' %}"></script>
+    <script src="{% static 'jquery_c.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'CommunityPage/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="navigation_bar">
+        <div id="left_side_tabs">
+            <img src="{% static 'amsine_logo_white.png' %}" alt="">
+            <div id="learning_tab">
+                <button class="tab_button" id="learning_tab_button" onclick="window.location.href = '/'">
+                    <img src="{% static 'white_learn_logo.png' %}" alt="">
+                    Learn
+                </button>
+            </div>
+            <div id="community_tab">
+                <button class="tab_button" id="community_tab_button">
+                    <img src="{% static 'white_community_logo.png' %}" alt="">
+                    Community
+                </button>
+            </div>
+            <div id="chat_link_tab">
+                <button class="tab_button" id="chat_link_tab_button">
+                    <img src="{% static 'white_chat_logo.png' %}" alt="">
+                    Chat
+                </button>
+            </div>
+        </div>
+        <div id="right_side_tabs">
+            <div id="language_tab">
+                <button class="tab_button" id="change_language_user_submenu">
+                    <img src="{% static 'Languages/'|add:last_language_used.name|add:'/language_logo.png' %}" alt="Language Logo">
+                    {{last_language_used.name}}
+                </button>
+            </div>
+            <div id="user_tab">
+                <div id="submenu" hidden>
+                    <button class="submenu_button" id="profile_user_submenu">Profile</button>
+                    <button class="submenu_button" id="log_out_user_submenu">Log Out</button>
+                </div>
+                <div id="user_tab_message_popup"></div>
+                <button class="tab_button" id="user_tab_button">
+                    <img src="{% static 'white_user_logo.png' %}" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="thread_container">
+        <div id="spinner_container">
+            <div class="spinner"></div>
+        </div>
+        <button id="new_thread_button">+ New Post</button>
+        <div id="add_new_thread_container">
+            <div id="add_new_thread_box">
+                <label for="title">Title: </label>
+                <input type="text" id="title" name="title">
+                <button id="submit_thread" disabled>Add Thread</button>
+            </div>
+        </div>
+        <div id="error_div">
+            <p></p>
+        </div>
+        <div id="thread_html_loader"></div>
+    </div>
+
+    <div id="chat_container">
+        <p id="chat_title">Chat</p>
+        <div id="chat_message_container">
+            <div id="chat_spinner_container" class="spinner_container">
+                <div class="spinner"></div>
+            </div>
+            <div id="chat_html_loader"></div>
+            <div id="chat_status_message"></div>
+            <div id="chat_buttons">
+                <div id="message_send_container">
+                    <input type="text" placeholder="Type Here" maxlength="200">
+                    <img id="message_send_button" src="{% static 'ChatPage/img/send_message_icon.png' %}" alt="">
+                </div>
+                <div id="reroll_buttons">
+                    <img src="{% static 'ChatPage/img/reroll_icon.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //Global variables
+        var language_name = '{{last_language_used.name}}'
+
+        var csrfmiddlewaretoken = "{{ csrf_token }}";
+        let logOutUrl = "{% url 'HomePage:logOut' %}";
+        let checkIfUserProfileCustomizedUrl = "{% url 'HomePage:checkIfUserProfileCustomized' %}"
+        let getThreadsUrl = "{% url 'CommunityPage:getThreads' %}"
+        let addThreadUrl = "{% url 'CommunityPage:addThread' %}"
+        let checkIfLinkedUrl = "{% url 'ChatPage:checkIfLinked' %}"
+        let linkUserUrl = "{% url 'ChatPage:linkUser' %}"
+        let getChatsUrl = "{% url 'ChatPage:getChats' %}"
+        let sendMessageUrl = "{% url 'ChatPage:sendMessage' %}"
+    </script>
+    <script src="{% static 'CommunityPage/js/script.js' %}"></script>
+</body>
+</html>

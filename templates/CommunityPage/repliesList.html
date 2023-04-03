@@ -1,0 +1,27 @@
+<style>
+    #replies_container div {
+        width: 100%;
+        border: none;
+        padding: 30px;
+    }
+    #replies_container div:nth-child(even) {
+        background-color: rgb(217, 217, 217);
+    }
+    .username {
+        text-align: start;
+        font-size: 20px;
+    }
+    .button_title {
+        text-align: end;
+        font-size: 40px;
+    }
+</style>
+
+<div id="replies_container">
+    {% for reply in repliesList %}
+        <div data-uuid="{{reply.uuid}}">
+            <p class="username">{{reply.userMeta.username}}: {{reply.created_at}}</p>
+            <p class="button_title">{{reply.message}}</p>
+        </div>
+    {% endfor %}
+</div>

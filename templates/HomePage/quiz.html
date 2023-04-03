@@ -1,0 +1,77 @@
+<style>
+    #quiz_container {
+        padding: 40px 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #quiz_container h1 {
+        font-weight: 400;
+        margin: 40px 60px;
+    }
+    #options button {
+        padding: 5px 50px;  
+        font-size: 100px;
+        background-color: white;
+        margin: 50px 45px 50px 45px;
+        border: 2px solid #9a9cea;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+    #next_button_container {
+        display: flex;
+        justify-content: flex-end;
+    }
+    #result {
+        font-size: 20px;
+    }
+    .next_button {
+        padding: 5px 30px;
+        background-color: #b2b3e0;
+        border: none;
+        color: white;
+        width: fit-content;
+        font-size: 30px;
+        border-radius: 10px;
+    }
+    .next_button:disabled {
+        background-color: #9a9ba9;
+    }
+</style>
+
+<div id="quiz_container">
+    <h1>{{question}}</h1>
+    <div id="options">
+        {% for op in options %}
+            {% if op.answer %}
+                <button class="option_button" data-answer="yes">{{op.word}}</button>
+            {% else %}
+                <button class="option_button">{{op.word}}</button>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <p id="result"></p>
+    <div id="next_button_container">
+        <button class="next_button" disabled>Next</button>
+    </div>
+</div>
+
+<script>
+
+    $('.option_button').on('click', function(event) {
+        console.log($(this).data('answer'))
+        if($(this).data('answer') == "yes") {
+            $('#result').text("Correct")
+            $('#result').css('color', 'green')
+            $('.next_button').removeAttr('disabled')
+            $(this).css('border', '2px solid green')
+        }
+        else {
+            $('#result').text("Wrong")
+            $('#result').css('color', 'red')
+            $('.next_button').removeAttr('disabled')
+            $(this).css('border', '2px solid red')
+        }
+    })
+
+</script>
