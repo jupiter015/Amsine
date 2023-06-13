@@ -49,5 +49,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For any questions or inquiries, please contact [Pratham Varma](mailto:prathamvarma2011@gmail.com) [Tanisha Swarup](mailto:tanishaswarup@gmail.com)
+For any questions or inquiries, please contact [Pratham Varma](mailto:prathamvarma2011@gmail.com) OR [Tanisha Swarup](mailto:tanishaswarup@gmail.com)
 
