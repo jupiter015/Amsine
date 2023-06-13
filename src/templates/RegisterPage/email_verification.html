@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amsine</title>
+    <script src="{% static 'jquery.js' %}"></script>
+    <script src="{% static 'jquery_c.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'RegisterPage/css/email_verification.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="top_bar">
+        <div id="image_div">
+            <img src="{% static 'amsine_logo_white.png' %}" alt="Amsine Logo">
+        </div>
+        <div id="top_bar_text">
+            <img src="{% static 'RegisterPage/img/otp_verification_lock.png' %}" alt="">
+        </div>
+    </div>
+    <form>
+        <h1>OTP Verification</h1>
+        <h3>Enter the OTP sent to your email</h3>
+        <label for="auth_code">Enter OTP</label>
+        <input type="text" name="auth_code" id="auth_code" placeholder="XXXXX" maxlength="5">
+        <br>
+
+        <button id="verifyAuthCode">Verify</button>
+        <p id="auth_code_message"></p>
+
+        <div class="spinner-container">
+            <div class="spinner" hidden></div>
+        </div>
+    </form>
+
+    <script>
+        // Global Variables
+        var csrfmiddlewaretoken = "{{ csrf_token }}";
+        var checkAuthCodeUrl = '{% url "RegisterPage:checkAuthCode" %}'
+    </script>
+    <script src="{% static 'RegisterPage/js/email_script.js' %}"></script>
+</body>
+</html>

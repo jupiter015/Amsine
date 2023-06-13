@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amsine</title>
+    <script src="{% static 'jquery.js' %}"></script>
+    <script src="{% static 'jquery_c.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'LoginPage/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body> 
+    <div id="top_bar">
+        <div id="image_div">
+            <img src="{% static 'amsine_logo_white.png' %}" alt="Amsine Logo">
+        </div>
+        <div id="top_bar_text">
+            <p>Log In to your account</p>
+        </div>
+    </div>
+    <form>
+
+        <div id="form_elements">
+            <label for="username">Enter Username: </label><br>
+            <input type="text" name="username" id="username" placeholder="jupiter">
+            <br>
+    
+            <label for="password">Enter password: </label><br>
+            <input type="password" name="password" id="password" placeholder="***********">
+            <br>
+    
+            <div id="buttons">
+                <button id="validateLogin">Login</button>
+                <button id="signUpButton">Sign Up</button>
+            </div>
+        </div>
+
+        <p id="message"></p>
+
+
+    </form>
+
+    <script>
+        //Global Variable
+        var csrfmiddlewaretoken = "{{ csrf_token }}";
+        var validate_url = "{% url 'LoginPage:validateLogin' %}";
+    </script>
+
+    <script src="{% static 'LoginPage/js/script.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+{% load static %}
+{% for chapter in chapters %}
+
+    <div data-chapter_number="{{chapter.chapterNum}}" class="chapter_panel">
+        {% if chapter.chapterLocked %}
+            <div title="{{chapter.chapter_description}}" class="chapter_div" data-locked>
+                <h1>
+                    CHAPTER {{chapter.chapterNum}}
+                    <img src="{% static 'Languages/chapter_lock.png' %}" alt="">
+                </h1>
+                <img src="{% static 'Languages/'|add:language|add:'/chapter'|add:chapter.chapterNum|add:'/chapter_logo.png' %}" alt="">
+            </div>
+        {% else %}
+            <div title="{{chapter.chapter_description}}" class="chapter_div">
+                CHAPTER {{chapter.chapterNum}}
+                <img src="{% static 'Languages/'|add:language|add:'/chapter'|add:chapter.chapterNum|add:'/chapter_logo.png' %}" alt="">
+            </div>
+        {% endif %}
+        {% for lesson in chapter.lessons %}
+            {% if lesson.lessonLocked %}
+                <button data-lesson_number="{{lesson.lessonNum}}" class="lesson_panel" data-locked disabled>
+                    <img src="{% static 'Languages/'|add:language|add:'/chapter'|add:chapter.chapterNum|add:'/lesson'|add:lesson.lessonNum|add:'/lesson_logo.png' %}" alt="">
+                    <div>
+                        <h3 title="{{lesson.lesson_description}}">{{chapter.chapter_title}}</h3>
+                        <p>{{lesson.lesson_description}}</p>
+                    </div>
+                </button>
+            {% else %}
+                {% if lesson.lessonProgress %}
+                    <button data-lesson_number="{{lesson.lessonNum}}" class="lesson_panel" onclick="window.location.href = '{{language}}/{{chapter.type}}/{{chapter.chapterNum}}/{{lesson.lessonNum}}'" data-completed>
+                        <img src="{% static 'Languages/'|add:language|add:'/chapter'|add:chapter.chapterNum|add:'/lesson'|add:lesson.lessonNum|add:'/lesson_logo.png' %}" alt="">
+                        <div>
+                            <h3 title="{{lesson.lesson_description}}">{{chapter.chapter_title}}</h3>
+                            <p>{{lesson.lesson_description}}</p>
+                        </div>
+                    </button>
+                {% else %}
+                    <button data-lesson_number="{{lesson.lessonNum}}" class="lesson_panel" onclick="window.location.href = '{{language}}/{{chapter.type}}/{{chapter.chapterNum}}/{{lesson.lessonNum}}'">
+                        <img src="{% static 'Languages/'|add:language|add:'/chapter'|add:chapter.chapterNum|add:'/lesson'|add:lesson.lessonNum|add:'/lesson_logo.png' %}" alt="">
+                        <div>
+                            <h3 title="{{lesson.lesson_description}}">{{chapter.chapter_title}}</h3>
+                            <p>{{lesson.lesson_description}}</p>
+                        </div>
+                    </button>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+        {% if not chapter.chapterLocked %}
+            <button id="chapter_quiz" onclick="window.location.href='{{language}}/{{chapter.type}}/{{chapter.chapterNum}}/quiz'">
+                <img src="{% static 'checkpoint.png' %}" alt="">
+                Take a quiz to test your language abilities
+            </button>
+        {% endif %}
+    </div>
+
+{% endfor %}
