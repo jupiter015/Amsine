@@ -1,0 +1,975 @@
+{
+	"name": "Hindi",
+	"version": "0.0.1",
+	"language_logo": "Language/japanese/language_logo.png",
+	"characters": [],
+	"normalChapters": [
+		{
+			"chapter_title": "Hindi alphabet",
+			"chapter_description": "Learning Hindi",
+			"lessons": [
+				{
+					"lesson_title": "Hindi vowels 1",
+					"lesson_description": "Learn how to write first few Hindi vowels",
+					"flashcard_questions":[
+						{
+							"word":"अ",
+							"translation":"a"
+						},
+						{
+							"word":"आ ",
+							"translation":"aa"
+						},
+						{
+							"word":"इ",
+							"translation":"i"
+						}
+					],
+					"translating_questions": [
+						{
+							"word":"अ",
+							"translation":"a"
+						},
+						{
+							"word":"आ",
+							"translation":"aa"
+						},
+						{
+							"word":"इ",
+							"translation":"i"
+						}
+					]
+				},
+				{
+					"lesson_title": "Hindi vowels 2",
+					"lesson_description": "Learn how to write next few hindi vowels",
+					"flashcard_questions":[
+						{
+							"word":"ई",
+							"translation":"ee"
+						},
+						{
+							"word":"उ",
+							"translation":"u"
+						},
+						{
+							"word":"ऊ",
+							"translation":"oo"
+						}
+					],
+					"translating_questions": [
+						{
+							"word":"ई",
+							"translation":"ee"
+						},
+						{
+							"word":"उ ",
+							"translation":"u"
+						},
+						{
+							"word":"ऊ",
+							"translation":"oo"
+						}
+					]
+				},
+				{
+					"lesson_title": "Hindi vowels 3",
+					"lesson_description": "Learn how to write more hindi vowels",
+					"flashcard_questions":[
+						{
+							"word":"ए ",
+							"translation":"ae"
+						},
+						{
+							"word":"ऐ",
+							"translation":"ai"
+						},
+						{
+							"word":"ओ ",
+							"translation":"oo"
+						}
+					],
+					"translating_questions": [
+						{
+							"word":"ए ",
+							"translation":"ae"
+						},
+						{
+							"word":"ऐ",
+							"translation":"ai"
+						},
+						{
+							"word":"ओ ",
+							"translation":"oo"
+						}
+					]
+				}
+			],
+			"quiz_questions": [
+				{
+					"question":"what is the right translation of 'a'",
+					"audio" : "",
+					"options": [
+						{
+							"word":"उ",
+							"answer": false
+						},
+						{
+							"word":"ए",
+							"answer": false
+						},
+						{
+							"word":"अ",
+							"answer": true
+						},
+						{
+							"word":"ओ",
+							"answer": false
+						}
+					]
+				},
+				{
+					"question":"what is the right translation of 'oo'",
+					"audio" : "",
+					"options": [
+						{
+							"word":"उ",
+							"answer": false
+						},
+						{
+							"word":"इ",
+							"answer": false
+						},
+						{
+							"word":"ऐ",
+							"answer": false
+						},
+						{
+							"word":"ऊ",
+							"answer": true
+						}
+					]
+				},
+				{
+					"question":"what is the right translation of 'ee'",
+					"audio" : "",
+					"options": [
+						{
+							"word":"ई",
+							"answer": true
+						},
+						{
+							"word":"आ",
+							"answer": false
+						},
+						{
+							"word":"उ",
+							"answer": false
+						},
+						{
+							"word":"इ",
+							"answer": false
+						}
+					]
+				},
+				{
+					"question":"what is the right translation of 'aa'",
+					"audio" : "",
+					"options": [
+						{
+							"word":"ऊ",
+							"answer": false
+						},
+						{
+							"word":"आ",
+							"answer": true
+						},
+						{
+							"word":"इ",
+							"answer": false
+						},
+						{
+							"word":"अ",
+							"answer": false
+						}
+					]
+				}
+			]
+		},
+		{
+			"chapter_title": "Hindi: learn Hindi alphabets",
+			"chapter_description": "Learning Hindi",
+			"lessons": [
+				{
+					"lesson_title": "Hindi Alphabest",
+					"lesson_description": "Learn how to write  Hindi alphabets",
+					"flashcard_questions":[
+						{
+							"word":"क",
+							"translation":"k"
+						},
+						{
+							"word":"ख",
+							"translation":"kh"
+						},
+						{
+							"word":"ग",
+							"translation":"g"
+						}
+					],
+					"translating_questions": [
+						{
+							"word":"क",
+							"translation":"k"
+						},
+						{
+							"word":"ख",
+							"translation":"kh"
+						},
+						{
+							"word":"ग",
+							"translation":"g"
+						}
+					]
+				},
+				{
+					"lesson_title": "Hindi Alphabets 2",
+					"lesson_description": "Learn how to write next few Hindi alphabets",
+					"flashcard_questions":[
+						{
+							"word":"घ",
+							"translation":"gh"
+						},
+						{
+							"word":"च",
+							"translation":"ch"
+						},
+						{
+							"word":"छ",
+							"translation":"cha"
+						}
+					],
+					"translating_questions": [
+						{
+							"word":"घ",
+							"translation":"gh"
+						},
+						{
+							"word":"च",
+							"translation":"ch"
+						},
+						{
+							"word":"छ",
+							"translation":"cha"
+						}
+					]
+				},
+				{
+					"lesson_title": "Hindi Alphabets 3",
+					"lesson_description": "Learn how to write next few Hindi alphabets",
+					"flashcard_questions":[
+						{
+							"word":"ज",
+							"translation":"j"
+						},
+						{
+							"word":"झ",
+							"translation":"jh"
+						},
+						{
+							"word":"ट",
+							"translation":"ta"
+						}
+					],
+					"translating_questions": [
+						{
+							"word":"ज",
+							"translation":"j"
+						},
+						{
+							"word":"झ",
+							"translation":"jh"
+						},
+						{
+							"word":"ट",
+							"translation":"ta"
+						}
+					]
+				}
+			],
+			"quiz_questions": [
+				{
+					"question":"what is the right translation of 'kh'",
+					"audio" : "",
+					"options": [
+						{
+							"word":"क",
+							"answer": false
+						},
+						{
+							"word":"झ",
+							"answer": false
+						},
+						{
+							"word":"ख",
+							"answer": true
+						},
+						{
+							"word":"ग",
+							"answer": false
+						}
+					]
+				},
+				{
+					"question":"what is the right translation of 'gh'",
+					"audio" : "",
+					"options": [
+						{
+							"word":"छ",
+							"answer": false
+						},
+						{
+							"word":"घ",
+							"answer": true
+						},
+						{
+							"word":"च",
+							"answer": false
+						},
+						{
+							"word":"ग",
+							"answer": false
+						}
+					]
+				},
+				{
+					"question":"what is the right translation of 'ta'",
+					"audio" : "",
+					"options": [
+						{
+							"word":"ज",
+							"answer": false
+						},
+						{
+							"word":"झ",
+							"answer": false
+						},
+						{
+							"word":"ट",
+							"answer": true
+						},
+						{
+							"word":"क",
+							"answer": false
+						}
+					]
+				},
+				{
+					"question":"what is the right translation of 'ch'",
+					"audio" : "",
+					"options": [
+						{
+							"word":"च",
+							"answer": true
+						},
+						{
+							"word":"घ",
+							"answer": false
+						},
+						{
+							"word":"ग",
+							"answer": false
+						},
+						{
+							"word":"झ",
+							"answer": false
+						}
+					]
+				}
+			]	
+		}
+	],
+	"travellingChapters": [
+		{
+			"chapter_title": "Travel: learn common travel words in hindi",
+			"chapter_description": "Learning travelling words",
+			"lessons": [
+				{
+					"lesson_title": "Travel 1",
+					"lesson_description": "Learn how to write first few travelling words",
+					"flashcard_questions":[
+						{
+							"word":"सफ़र",
+							"translation":"travel"
+						},
+						{
+							"word":"यात्रा",
+							"translation":"tour"
+						},
+						{
+							"word":"पर्यटक",
+							"translation":"tourist"
+						}
+					],
+					"translating_questions": [
+						{
+							"word":"सफ़र",
+							"translation":"travel"
+						},
+						{
+							"word":"यात्रा",
+							"translation":"tour"
+						},
+						{
+							"word":"पर्यटक",
+							"translation":"tourist"
+						}
+					]
+				},
+				{
+					"lesson_title": "Travel 2",
+					"lesson_description": "Learn how to write next few travelling words",
+					"flashcard_questions":[
+						{
+							"word":"विमान",
+							"translation":"airplane"
+						},
+						{
+							"word":"रेलगाड़ी",
+							"translation":"train"
+						},
+						{
+							"word":"समय",
+							"translation":"time"
+						}
+					],
+					"translating_questions": [
+						{
+							"word":"विमान",
+							"translation":"airplane"
+						},
+						{
+							"word":"रेलगाड़ी",
+							"translation":"train"
+						},
+						{
+							"word":"समय",
+							"translation":"time"
+						}
+					]
+				},
+				{
+					"lesson_title": "Travel 3",
+					"lesson_description": "Learn how to write more travelling words",
+					"flashcard_questions":[
+						{
+							"word":"यातायात",
+							"translation":"Traffic"
+						},
+						{
+							"word":"स्मारिका",
+							"translation":"souvenir"
+						},
+						{
+							"word":"सामान",
+							"translation":"Luggage"
+						}
+					],
+					"translating_questions": [
+						{
+							"word":"यातायात",
+							"translation":"Traffic"
+						},
+						{
+							"word":"स्मारिका",
+							"translation":"souvenir"
+						},
+						{
+							"word":"सामान",
+							"translation":"Luggage"
+						}
+					]
+				}
+			],
+			"quiz_questions": [
+				{
+					"question":"what is the right translation of 'tour'",
+					"audio" : "",
+					"options": [
+						{
+							"word":"विमान",
+							"answer": false
+						},
+						{
+							"word":"स्मारिका",
+							"answer": false
+						},
+						{
+							"word":"यात्रा",
+							"answer": true
+						},
+						{
+							"word":"समय",
+							"answer": false
+						}
+					]
+				},
+				{
+					"question":"what is the right translation of 'Train'",
+					"audio" : "",
+					"options": [
+						{
+							"word":"यातायात",
+							"answer": false
+						},
+						{
+							"word":"विमान",
+							"answer": false
+						},
+						{
+							"word":"सफ़र",
+							"answer": false
+						},
+						{
+							"word":"रेलगाड़ी",
+							"answer": true
+						}
+					]
+				},
+				{
+					"question":"what is the right translation of 'souvenir'",
+					"audio" : "",
+					"options": [
+						{
+							"word":"स्मारिका",
+							"answer": true
+						},
+						{
+							"word":"यात्रा",
+							"answer": false
+						},
+						{
+							"word":"पर्यटक",
+							"answer": false
+						},
+						{
+							"word":"समय",
+							"answer": false
+						}
+					]
+				},
+				{
+					"question":"what is the right translation of 'Travel'",
+					"audio" : "",
+					"options": [
+						{
+							"word":"सामान",
+							"answer": false
+						},
+						{
+							"word":"रेलगाड़ी",
+							"answer": false
+						},
+						{
+							"word":"सफ़र",
+							"answer": true
+						},
+						{
+							"word":"विमान",
+							"answer": false
+						}
+					]
+				}
+			]
+		}
+	],
+	"readingChapters": [
+		{
+			"chapter_title": "Reading: learn common reading words in Hindi",
+			"chapter_description": "Learning reading words",
+			"lessons": [
+				{
+					"lesson_title": "reading vocab 1",
+					"lesson_description": "Learn how to write first few words about reading ",
+					"flashcard_questions":[
+						{
+							"word":"पढ़ना",
+							"translation":"reading"
+						},
+						{
+							"word":"किताब",
+							"translation":"book"
+						},
+						{
+							"word":"कहानी",
+							"translation":"story"
+						}
+					],
+					"translating_questions": [
+						{
+							"word":"पढ़ना",
+							"translation":"reading"
+						},
+						{
+							"word":"किताब",
+							"translation":"book"
+						},
+						{
+							"word":"कहानी",
+							"translation":"story"
+						}
+					]
+				},
+				{
+					"lesson_title": "Reading Vocab  2",
+					"lesson_description": "Learn how to write more words about reading ",
+					"flashcard_questions":[
+						{
+							"word":"साहित्य",
+							"translation":"literature"
+						},
+						{
+							"word":"पुस्तकालय",
+							"translation":"library"
+						},
+						{
+							"word":"सीखना",
+							"translation":"learning"
+						}
+					],
+					"translating_questions": [
+						{
+							"word":"साहित्य",
+							"translation":"literature"
+						},
+						{
+							"word":"पुस्तकालय",
+							"translation":"library"
+						},
+						{
+							"word":"सीखना",
+							"translation":"learning"
+						}
+					]
+				},
+				{
+					"lesson_title": "Reading 3",
+					"lesson_description": "Learn more vocabulary about reading in hindi ",
+					"flashcard_questions":[
+						{
+							"word":"पुस्ताक तख्ता",
+							"translation":"bookshelf"
+						},
+						{
+							"word":"पाठक",
+							"translation":"reader"
+						},
+						{
+							"word":"कागज़",
+							"translation":"paper"
+						}
+					],
+					"translating_questions": [
+						{
+							"word":"पुस्ताक तख्ता",
+							"translation":"bookshelf"
+						},
+						{
+							"word":"पाठक",
+							"translation":"reader"
+						},
+						{
+							"word":"कागज़",
+							"translation":"paper"
+						}
+					]
+				}
+			],
+			"quiz_questions": [
+				{
+					"question":"what is the right translation of 'literature'",
+					"audio" : "",
+					"options": [
+						{
+							"word":"सीखना",
+							"answer": false
+						},
+						{
+							"word":"साहित्य",
+							"answer": true
+						},
+						{
+							"word":"कहानी",
+							"answer": false
+						},
+						{
+							"word":"पाठक",
+							"answer": false
+						}
+					]
+				},
+				{
+					"question":"what is the right translation of 'book'",
+					"audio" : "",
+					"options": [
+						{
+							"word":"किताब",
+							"answer": true
+						},
+						{
+							"word":"पढ़ना",
+							"answer": false
+						},
+						{
+							"word":"कागज़",
+							"answer": false
+						},
+						{
+							"word":"पुस्तकालय",
+							"answer": false
+						}
+					]
+				},
+				{
+					"question":"what is the right translation of 'paper'",
+					"audio" : "",
+					"options": [
+						{
+							"word":"पढ़ना",
+							"answer": false
+						},
+						{
+							"word":"साहित्य",
+							"answer": false
+						},
+						{
+							"word":"सीखना",
+							"answer": false
+						},
+						{
+							"word":"कागज़",
+							"answer": true
+						}
+					]
+				},
+				{
+					"question":"what is the right translation of 'reading'",
+					"audio" : "",
+					"options": [
+						{
+							"word":"कहानी",
+							"answer": false
+						},
+						{
+							"word":"पाठक",
+							"answer": false
+						},
+						{
+							"word":"पढ़ना",
+							"answer": true
+						},
+						{
+							"word":"कागज़",
+							"answer": false
+						}
+					]
+				}
+			]
+		}
+
+	],
+	"gamingChapters": [
+		{
+			"chapter_title": "Gaming: learn common gaming words in Hindi",
+			"chapter_description": "Learning gaming words",
+			"lessons": [
+				{
+					"lesson_title": "gaming vocab 1",
+					"lesson_description": "Learn how to write first few words about gaming ",
+					"flashcard_questions":[
+						{
+							"word":"वीडियो गेम",
+							"translation":"videogame"
+						},
+						{
+							"word":"खेल",
+							"translation":"play"
+						},
+						{
+							"word":"कंसोल",
+							"translation":"console"
+						}
+					],
+					"translating_questions": [
+						{
+							"word":"वीडियो गेम",
+							"translation":"videogame"
+						},
+						{
+							"word":"खेल",
+							"translation":"play"
+						},
+						{
+							"word":"कंसोल",
+							"translation":"console"
+						}
+					]
+				},
+				{
+					"lesson_title": "gaming Vocab  2",
+					"lesson_description": "Learn how to write more words about gaming ",
+					"flashcard_questions":[
+						{
+							"word":"खिलाड़ी",
+							"translation":"player"
+						},
+						{
+							"word":"कार्य",
+							"translation":"task"
+						},
+						{
+							"word":"नक्शा",
+							"translation":"map"
+						}
+					],
+					"translating_questions": [
+						{
+							"word":"खिलाड़ी",
+							"translation":"player"
+						},
+						{
+							"word":"कार्य",
+							"translation":"task"
+						},
+						{
+							"word":"नक्शा",
+							"translation":"map"
+						}
+					]
+				},
+				{
+					"lesson_title": "Gaming 3",
+					"lesson_description": "Learn more vocabulary about gaming in Hindi ",
+					"flashcard_questions":[
+						{
+							"word":"दुश्मन",
+							"translation":"enemy"
+						},
+						{
+							"word":"हथियार",
+							"translation":"weapon"
+						},
+						{
+							"word":"दिल",
+							"translation":"hearts"
+						}
+					],
+					"translating_questions": [
+						{
+							"word":"दुश्मन",
+							"translation":"enemy"
+						},
+						{
+							"word":"हथियार",
+							"translation":"weapon"
+						},
+						{
+							"word":"दिल",
+							"translation":"hearts"
+						}
+					]
+				}
+			],
+			"quiz_questions": [
+				{
+					"question":"what is the right translation of 'player'",
+					"audio" : "",
+					"options": [
+						{
+							"word":"खेल",
+							"answer": false
+						},
+						{
+							"word":"खिलाड़ी",
+							"answer": true
+						},
+						{
+							"word":"कार्य",
+							"answer": false
+						},
+						{
+							"word":"वीडियो गेम",
+							"answer": false
+						}
+					]
+				},
+				{
+					"question":"what is the right translation of 'hearts'",
+					"audio" : "",
+					"options": [
+						{
+							"word":"हथियार",
+							"answer": false
+						},
+						{
+							"word":"नक्शा",
+							"answer": false
+						},
+						{
+							"word":"वीडियो गेम",
+							"answer": false
+						},
+						{
+							"word":"दिल",
+							"answer": true
+						}
+					]
+				},
+				{
+					"question":"what is the right translation of 'videogame'",
+					"audio" : "",
+					"options": [
+						{
+							"word":"वीडियो गेम",
+							"answer": true
+						},
+						{
+							"word":"खिलाड़ी",
+							"answer": false
+						},
+						{
+							"word":"कंसोल",
+							"answer": false
+						},
+						{
+							"word":"खेल",
+							"answer": false
+						}
+					]
+				},
+				{
+					"question":"what is the right translation of 'map'",
+					"audio" : "",
+					"options": [
+						{
+							"word":"कार्य",
+							"answer": false
+						},
+						{
+							"word":"खेल",
+							"answer": false
+						},
+						{
+							"word":"नक्शा",
+							"answer": true
+						},
+						{
+							"word":"दुश्मन",
+							"answer": false
+						}
+					]
+				}
+			]
+		}
+	]
+}
